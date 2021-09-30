@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("background.jpg") center center fixed no-repeat;
+    background-size: cover;
+    font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.mainDiv {
+    display: flex;
+    border-radius: 16px;
+    box-shadow: 0 3px 5px ;
+    overflow: hidden;
+}
+
+.mainSignInDiv {
+    padding: 20px;
+    border-radius: 16px 0 0 16px;
+    background: transparent;
+}
+
+.mainSignInAnimationDiv {
+    animation: show 0.6s;
+	opacity: 1;
+}
+
+.mainSignUpAnimationDiv {
+    transition: transform 0.6s ease-in-out;
+    opacity: 1;
+}
+
+.signUpOverflow {
+    overflow: hidden;
+}
+
+.mainSignUpDiv {
+    padding: 20px;
+    border-radius: 16px 0 0 16px;
+    background: #e9e9e9;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 16px;
+    font-weight:lighter;
+}
+
+#signIH1 {
+    display: none;
+}
+
+a {
+    /* width: 339px; */
+    text-align: center;
+    padding-left: 5.5rem;
+    text-decoration: none;
+    color: #000;
+}
+.SignInDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    width: 379px;
+    height: 420px;
+}
+
+.signInInput {
+    padding: 0.9rem 0.9rem;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.Btn {
+    background-color: #0367a6;
+	background-image: linear-gradient(90deg, #0367a6 0%, #008997 74%);
+	border-radius: 20px;
+	border: 1px solid #0367a6;
+	color: #e9e9e9;
+	cursor: pointer;
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding: 0.9rem 4rem;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.mainBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+}
+
+.Btn:active:focus {
+    transform: scale(0.95);
+    outline: none;
+}
+
+#signInForm {
+    display: none;
+}
+
+
+@keyframes showSignInOne {
+    0% {
+        transform: translateX(-1000px);
+    }
+    
+    80% {
+        transform: translateX(0px);
+    }
+    
+    100% {
+        
+    }
+}
+
+@keyframes showSignInTwo {
+    0% {
+        transform: translateX(-1000px);
+    }
+    
+    80% {
+        transform: translateX(0px);
+    }
+    
+    100% {
+        
+    }
+}
+
+@keyframes showSignUpOne {
+    0% {
+        transform: translateX(1000px);
+    }
+    
+    80% {
+        transform: translateX(0px);
+    }
+    
+    100% {
+        
+    }   
+}
+
+@keyframes showSignUpTwo {
+    0% {
+        transform: translateX(1000px);
+    }
+    
+    80% {
+        transform: translateX(0px);
+    }
+    
+    100% {
+        
+    }
+}
